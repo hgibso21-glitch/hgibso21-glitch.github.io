@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./state-script.js"></script>
+    <title>STATS 2122</title>
+</head>
+<body>
+    <section>
+        <h1>*WORK IN PROGRESS* STATS 2122 Calculations *WORK IN PROGRESS*</h1>
+        <h2>Directory</h2>
+        <ul>
+            <li><a href="#mean">Mean</a></li>
+            <li><a>Median</a></li>
+            <li><a>Standard Deviation</a></li>
+        </ul>
+    </section>
+
+    <section for="mean">
+        <h4>Mean:</h4>
+        <form onsubmit="getMean(); return false;">
+            <label for="mean"></label>
+                <input type="text" id="mean" name="list"/>
+                <button type="submit">Calculate Mean</button>
+        </form>
+    </section>
+    <div class="results">
+        <p class="bold">Mean: <span id="mean"></span></p>
+    </div>
+
+
+</body>
+</html>
