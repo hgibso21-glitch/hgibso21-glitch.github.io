@@ -4,5 +4,5 @@ const getMean = () => {
   const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
   return numbers.reduce((acc, el) => acc + el, 0) / numbers.length;
   
-  document.querySelector("#mean").textContent = mean;
+  document.querySelector("#gotmean").textContent = getMean();
 }
