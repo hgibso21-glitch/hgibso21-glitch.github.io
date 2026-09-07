@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATS 2122</title>
+</head>
+<body>    
+    <section>
+        <h1>*WORK IN PROGRESS* STATS 2122 Calculations *WORK IN PROGRESS*</h1>
+        <h3>Back to the <a href="..//index.html">home</a> page</h3>
+        <h2>Directory</h2>
+        <ul>
+            <li><a href="#mean">Mean</a></li>
+            <li><a href="#median">Median</a></li>
+            <li><a href="#standard-deviation">Standard Deviation</a></li>
+        </ul>
+    </section>
+
+    <section for="mean">
+        <h4>Mean:</h4>
+        <form>
+            <label for="mean"></label>
+                <input type="text" id="numbers" name="list"/>
+                <button onclick="getMean();" for="mean">
+                    Calculate Mean</button>
+        </form>
+    </section>
+
+    <section for="median">
+        <h4>Median:</h4>
+        <form>
+            <label for="median"></label>
+                <input type="text" id="numbers" name="list"/>
+                <button onclick="getMedian();" for="median">
+                    Calculate Median</button>
+        </form>
+    </section>
+
+    <section for="standard-deviation">
+        <h4>Standard Deviation:</h4>
+        <form>
+            <label for="standard-deviation"></label>
+                <input type="text" id="numbers" name="list"/>
+                <button onclick="getStandardDeviationCorrected();" for="standard-deviation">
+                    Calculate Standard Deviation (Corrected)</button>
+                <button onclick="getStandardDeviationUncorrected();" for="standard-deviation">
+                    Calculate Standard Deviation (Uncorrected)</button>
+        </form>
+    </section>
+
+    <script src="script-stats.js"></script>
+</body>
+</html>
