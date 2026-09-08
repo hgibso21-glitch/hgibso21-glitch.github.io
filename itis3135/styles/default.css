@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(221, 206, 176);
+    color:#000055;
+    font-family: "Akt", sans-serif;
+}
+H1{
+    color:#000055;
+    font-family: "Oswald","Fjalla-One" sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:larger;
+}
+
+.links{
+    background-color:#000055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color:rgb(221, 206, 176);
+}
+
+.links a:link{
+    color:rgb(221, 206, 176);
+}
+.links a:visited{
+    color:#6F686D;
+}
+.links a:hover{
+    color:#D64933
+}
+
