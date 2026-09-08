@@ -1,0 +1,21 @@
+body{
+    background-color:#F5E1D5;
+    color:#3A3A3A;
+}
+a:link{
+    color:#6D9DC5;
+}
+a:visited{
+    color:#F7B7A3;
+}
+a:hover{
+    color:#A4D65E;
+}
+
+p{
+    font-size: larger;  
+}
+
+footer{
+    font-size: smaller;
+}

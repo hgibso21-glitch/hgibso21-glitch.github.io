@@ -1,17 +1,24 @@
 body{
-    background-color:rgb(221, 206, 176);
+    background-color:#DDCEB0;
     color:#000055;
     font-family: "Akt", sans-serif;
 }
-H1{
-    color:#000055;
-    font-family: "Oswald","Fjalla-One" sans-serif;
-}
+
 .title{
+    font-family: "Oswald","Fjalla-One" sans-serif;
+    color:#541226;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:larger;
+}
+.copyright{
+    color:rgb(25, 25, 25);
+    font-size:small;
+    font-family: "sans-serif", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .links{
@@ -20,16 +27,22 @@ H1{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color:rgb(221, 206, 176);
+    color:#DDCEB0;
 }
 
 .links a:link{
-    color:rgb(221, 206, 176);
+    color:#DDCEB0;
 }
 .links a:visited{
-    color:#6F686D;
+    color:#758BFD;
 }
 .links a:hover{
-    color:#D64933
+    color:#541226;
 }
 
+main{
+    background-color:#541226;
+    color:#DDCEB0;
+    font-family: "Akt", sans-serif;
+    border-radius: 10px;
+}
