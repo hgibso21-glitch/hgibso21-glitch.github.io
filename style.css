@@ -1,6 +1,7 @@
 body{
     background-color:#F2F2F2;
     color:#5B5C7A;
+    text-align: center;
 }
 a:link{
     color:#A3C1DA;
@@ -18,4 +19,9 @@ p{
 
 footer{
     font-size: smaller;
+}
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }

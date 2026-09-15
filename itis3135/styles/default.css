@@ -1,19 +1,55 @@
+:root{
+    --color-lighest:#F0EAD2;
+    --color1-light:#a9bf73;
+    --color1-dark:#717744;
+    --color2-light:#A98467;
+    --color2-dark:#6C584C;
+
+}
+
 body{
-    background-color:#DDCEB0;
-    color:#000055;
+    background-color:var(--color-lighest);
+    color:var(--color1-dark);
     font-family: "Akt", sans-serif;
 }
+main{
+    text-align: center;
+    background-color:var(--color2-light);
+    border: 5px solid var(--color1-light);
+    color:var(--color-lighest);
+    font-family: "Akt", sans-serif;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+}
+h2{
+    text-decoration: underline;
+}
+ul {
+    text-align: left;
+    margin-left: 25%;
+    list-style-position: inside;
+}
+.introduction-list{
+    margin-left: 0%;
+}
+.introduction-list-nested{
+    margin-top:5px;
+    margin-left: 2%;
+    margin-bottom: 5px;
+}
+
 
 .title{
     font-family: "Oswald","Fjalla-One" sans-serif;
-    color:#541226;
+    color:var(--color1-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:larger;
 }
 .copyright{
-    color:rgb(25, 25, 25);
+    color:var(--color2-dark);
     font-size:small;
     font-family: "sans-serif", sans-serif;
     display: flex;
@@ -21,42 +57,54 @@ body{
     align-items: center;
 }
 .copyright a:link{
-    color:#758BFD;
+    color:var(--color1-dark);
 }
 
 .copyright a:visited{
-    color:#541226;
+    color:var(--color2-light);
 }
 
 .copyright a:hover{
-    color:#000055;
+    color:var(--color2-light);
 }
 
 
 .links{
-    background-color:#000055;
+    background-color:var(--color2-dark);
+    border: 5px solid var(--color1-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color:#DDCEB0;
+    color:var(--color-lighest);
 }
 
 .links a:link{
-    color:#DDCEB0;
+    color:var(--color-lighest);
 }
 .links a:visited{
-    color:#758BFD;
+    color:var(--color1-light);
 }
 .links a:hover{
-    color:#541226;
+    color:var(--color1-dark);
 }
 
-main{
-    background-color:#541226;
-    color:#DDCEB0;
-    font-family: "Akt", sans-serif;
-    border-radius: 10px;
-    margin: 30px;
-    padding: 20px;
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--color2-dark);
+}
+
+figcaption{
+    font-size: 12px;
+    color:var(--color-lightest);
+    font-style: italic;
+}
+
+@media (min-width: 600px) {
+    main{
+        margin: 50px;
+        padding: 30px;
+    }
 }
