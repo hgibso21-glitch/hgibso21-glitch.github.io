@@ -30,10 +30,10 @@ ul {
     margin-left: 25%;
     list-style-position: inside;
 }
-.introduction-list{
+.list{
     margin-left: 0%;
 }
-.introduction-list-nested{
+.list-nested{
     margin-top:5px;
     margin-left: 2%;
     margin-bottom: 5px;
@@ -87,6 +87,19 @@ ul {
 }
 .links a:hover{
     color:var(--color1-dark);
+}
+
+.link{
+    color:var(--color1-light);
+}
+.link a:link{
+    color:var(--color1-light);
+}
+a.link:visited{
+    color:var(--color1-dark);
+}
+a.link:hover{
+    color:var(--color2-dark);
 }
 
 .profile-image{

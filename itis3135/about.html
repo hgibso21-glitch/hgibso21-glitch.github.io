@@ -22,38 +22,44 @@
                 <img src="images/apple-touch-icon.png" alt="Description of icon" style="width: 50px; height: 50px;"/>
             </h1>
         </div>
-        <div class="links">
+        <nav class="links">
             <p>
-                <a href="index.html">Home</a> |  
-                <a href="about.html">About</a> | 
+                <a href="index.html">Home</a> |   
+                <a href="introduction.html">Introduction</a> |
                 <a href="contract.html">Contract</a> | 
-                <a href="introduction.html">Introduction</a>
+                <a href="about.html">About</a>
             </p>
-        </div>
+        </nav>
     </header>
     <hr>
     <main>
         <h2>About</h2>
-        <p>In the ITIS3135 webpage, we will explore the fundamentals of front-end web development.</p>
-        <p> We will have a various amount of site as planned in the itinerary.</p>
-        <h3>Course Sites:</h3>
-        <ul>
-            <li>Personal Home</li>
-            <li>Course Site</li>
-            <li>Design firm</li>
-            <li>Crappy page</li>
-            <li>Whimsical Product company</li>
-            <li>Peer-management tool</li>
-            <li>Client project</li>
-        </ul>
-        <h3>Course tools:</h3>
-        <ul>
+        <p>This page is built in part to demonstrate work for the Charlotte class ITIS3135 - Front-End Web Application Development for those sections run by Mr. von Briesen. You may find additional information about this course at <a  class="link" href="https://divonbriesen.github.io/teaching/itis3135/" target="_blank" rel="noopener noreferrer">https://divonbriesen.github.io/teaching/itis3135/</a>.</p>
+        <p>This course seeks to provide students relevant experience in front-end web application development by building multiple websites using a variety of tools and techniques. </p>
+        <h4>The tools the course uses specifically include:</h4>
+        <hr>
+        <ul class="list">
             <li>VS Code</li>
-            <li>Emment</li>
-            <li>SFTP/Filezilla</li>
-            <li>GitHub</li>
-            <li>Accumulua</li>
+            <li>Emmet within VS Code</li>   
+            <li>SFTP via Filezilla</li>
+            <li>Git via GitHub Desktop and GitHub.com</li>
+            <li>Various Browser tools</li>
+            <li>The Accumulus Validator</li>
         </ul>
+        <hr>
+        <h4>The sites students will build include, and which this page links to, should include:</h4>
+        <hr>
+        <ul class="list">
+            <li>A personal home portfolio</li>
+            <li>This course site</li>
+            <li>A design firm site - representing a fictitious/aspirational design/consulting firm for the student and named after them.</li>
+            <li>a Crappy page - intended to do all the bad things, so as to avoid them anywhere else</li>
+            <li>A whimsical product company</li>
+            <li>A student/colleague/peer management tool</li>
+            <li>A client project website</li>
+        </ul>
+        <hr>
+
     </main>
     <hr>
     <footer>
@@ -69,7 +75,17 @@
                 <a href="https://www.linkedin.com/in/haylee-gibson-977823389/">LinkedIn</a>
             </p>
         </div>
-        <p class="copyright"><em>Designed by <a href="https://webpages.charlotte.edu/hgibso21/">Gibson Co</a> ©2026</em></p>
+        <p class="copyright"><em>Designed by <a href="https://webpages.charlotte.edu/hgibso21/">Gibby Designs</a> ©2026</em></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
     </footer>
 </body>
 </html>
