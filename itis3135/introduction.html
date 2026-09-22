@@ -9,33 +9,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="stylesheet" href="styles/default.css">
-    <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script> 
 </head>
 <body>
-    <header>
-         <div class="title">
-            <h1>
-                <img src="images/apple-touch-icon.png" alt="Description of icon" style="width: 50px; height: 50px;"/>
-                <strong>Haylee Gibson | ITIS 3135</strong>
-                <img src="images/apple-touch-icon.png" alt="Description of icon" style="width: 50px; height: 50px;"/>
-            </h1>
-        </div>
-        <nav class="links">
-            <p>
-                <a href="index.html">Home</a> |   
-                <a href="introduction.html">Introduction</a> |
-                <a href="contract.html">Contract</a> | 
-                <a href="about.html">About</a>
-            </p>
-        </nav>
-    </header>
+    <div data-include="components/header.html"></div>
     <hr>
     <main>
         <h2>Haylee Gibson | Introduction</h2>
         <figure>
-            <img src="https://scontent-atl3-2.cdninstagram.com/v/t51.82787-19/731762235_17879218200612444_2584701121550748978_n.jpg?_nc_cat=105&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45MjkuQzMifQ%3D%3D&_nc_ohc=qSV8f_l3t_EQ7kNvwH1DdUE&_nc_oc=Adry2UP6A_uu8S2Xu0jZbeIItg1qBKQmf3-b1mEE9OBMEDRBf81mDrkIVFPHkbG81Jw&_nc_zt=24&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=iVgf4E74HSY23ESp2QjA-w&_nc_ss=7b2a8&oh=00_AQLgE26CHUM_Zv8px3CkHBiqNqYUwhPLEvrnPfNC5LK8QQ&oe=6AAEB6BB" alt="Haylee Gibson" class="profile-image"/>
+            <img src="https://scontent-atl3-2.cdninstagram.com/v/t51.82787-19/731762235_17879218200612444_2584701121550748978_n.jpg?_nc_cat=105&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45MjkuQzMifQ%3D%3D&_nc_ohc=WtfYdNp8FWsQ7kNvwFotVp8&_nc_oc=Adqpj5YOAGDPIlRzQcxe-D2-GalGKh-_ezsk3lH2xLm2xExx_mDBpGOCVhtiofEuGuk&_nc_zt=24&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=GVmu3vkqSL5Puz-iiW-qmg&_nc_ss=7b2a8&oh=00_AQL4px4jsLyZTY4K6_XO2E9xGru16b_38onFz4ZpYzPzoQ&oe=6AB7B8FB" alt="Haylee Gibson" class="profile-image"/>
             <figcaption><em>Playing the Bass Drum over the summer for DCI.</em></figcaption>
         </figure>
         
@@ -57,32 +40,8 @@
         <p>"Just be a rock" <em>(Jobu Tupaki, Everything Everywhere All at Once)</em></p>
     </main>
     <hr>
-    <footer>
-        <div class="links">
-            <p>
-                <strong>Links: </strong>
-                <a href="https://webpages.charlotte.edu/hgibso21/">Webspace</a> | 
-                <a href="https://github.com/hgibso21-glitch">GitHub Account</a> | 
-                <a href="https://github.com/hgibso21-glitch/hgibso21-glitch.github.io"> GitHub root </a> | 
-                <a href="https://hgibso21-glitch.github.io/">GitHub.io</a> | 
-                <a href="https://www.freecodecamp.org/hgibso21">FreeCodeCamp</a> | 
-                <a href="https://www.codecademy.com/profiles/hgibso21">Codecademy</a> | 
-                <a href="https://www.linkedin.com/in/haylee-gibson-977823389/">LinkedIn</a>
-            </p>
-        </div>
-        <p class="copyright"><em>Designed by <a href="https://webpages.charlotte.edu/hgibso21/">Gibby Designs</a> ©2026</em></p>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-        </a>
-
-        <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>
-        
-    </footer>
+    <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>

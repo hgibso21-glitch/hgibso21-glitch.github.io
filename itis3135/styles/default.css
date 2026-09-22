@@ -43,10 +43,8 @@ ul {
 .title{
     font-family: "Oswald","Fjalla-One" sans-serif;
     color:var(--color1-dark);
-    display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
-    font-size:larger;
 }
 .copyright{
     color:var(--color2-dark);
@@ -115,6 +113,10 @@ figcaption{
     font-style: italic;
 }
 
+.icon-default{
+    width:50px;
+    height:50px;
+}
 @media (min-width: 600px) {
     main{
         margin: 50px;
