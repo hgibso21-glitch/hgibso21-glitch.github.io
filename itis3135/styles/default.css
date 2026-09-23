@@ -11,6 +11,8 @@ body{
     background-color:var(--color-lighest);
     color:var(--color1-dark);
     font-family: "Akt", sans-serif;
+    max-width: center;
+    margin:auto;
 }
 main{
     text-align: center;
@@ -21,9 +23,6 @@ main{
     border-radius: 10px;
     margin: 30px;
     padding: 20px;
-}
-h2{
-    text-decoration: underline;
 }
 ul {
     text-align: left;
@@ -54,16 +53,16 @@ ul {
     justify-content: center;
     align-items: center;
 }
-.copyright a:link{
+.copyright a:link,.not-themed a:link{
     color:var(--color1-dark);
 }
 
-.copyright a:visited{
+.copyright a:visited,.not-themed a:visited{
     color:var(--color2-light);
 }
 
-.copyright a:hover{
-    color:var(--color2-light);
+.copyright a:hover,.not-themed a:hover{
+    color:var(--color2-dark);
 }
 
 
@@ -74,7 +73,22 @@ ul {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
     color:var(--color-lighest);
+}
+
+.not-themed{
+    background-color:#a9bf7368;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    color:var(--color2-dark);
+    padding:-3px;
+    margin-bottom:5px;
 }
 
 .links a:link{
