@@ -24,6 +24,10 @@ main{
     margin: 30px;
     padding: 20px;
 }
+h6{
+    font-family: "Oswald","Fjalla-One" sans-serif;
+    font-size: large;
+}
 ul {
     text-align: left;
     margin-left: 25%;
@@ -58,7 +62,7 @@ ul {
 }
 
 .copyright a:visited,.not-themed a:visited{
-    color:var(--color2-light);
+    color:var(--color1-dark);
 }
 
 .copyright a:hover,.not-themed a:hover{
@@ -95,7 +99,7 @@ ul {
     color:var(--color-lighest);
 }
 .links a:visited{
-    color:var(--color1-light);
+    color:var(--color-lighest);
 }
 .links a:hover{
     color:var(--color1-dark);
@@ -104,19 +108,21 @@ ul {
 .link{
     color:var(--color1-light);
 }
-.link a:link{
-    color:var(--color1-light);
-}
+a.link:link,
 a.link:visited{
-    color:var(--color1-dark);
+    color:var(--color1-light);
 }
 a.link:hover{
     color:var(--color2-dark);
 }
 
 .profile-image{
+    display: block;
     width: 200px;
     height: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     border: 5px solid var(--color2-dark);
 }

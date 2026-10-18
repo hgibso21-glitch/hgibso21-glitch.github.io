@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marching Bass Drum | My Hobby</title>
+    <style>
+        :root {
+            --ink: #253c3a;
+            --muted: #526b66;
+            --paper: #f3eadb;
+            --surface: #fff9ef;
+            --green: #245b50;
+            --coral: #b94f3c;
+            --gold: #e3ad57;
+            --line: #c8bba5;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            line-height: 1.65;
+        }
+
+        a {
+            color: var(--green);
+            font-weight: 700;
+            text-underline-offset: 0.2em;
+        }
+
+        a:hover {
+            color: var(--coral);
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--coral);
+            outline-offset: 4px;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -10000px;
+            top: 0.5rem;
+            z-index: 1;
+            padding: 0.6rem 1rem;
+            background: var(--surface);
+        }
+
+        .skip-link:focus {
+            left: 0.5rem;
+        }
+
+        header {
+            padding: 2.5rem 1rem;
+            background: var(--green);
+            color: var(--surface);
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--gold);
+            font-size: clamp(2rem, 6vw, 3.5rem);
+        }
+
+        header p {
+            max-width: 42rem;
+            margin: 0.75rem auto 0;
+        }
+
+        nav {
+            padding: 0.8rem 1rem;
+            background: var(--ink);
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.25rem;
+            max-width: 70rem;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 0.35rem 0;
+            color: var(--surface);
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        main {
+            width: min(100% - 2rem, 70rem);
+            margin: 2rem auto;
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+            padding: clamp(1.25rem, 4vw, 2rem);
+            border: 1px solid var(--line);
+            border-left: 0.45rem solid var(--coral);
+            border-radius: 0.7rem;
+            background: var(--surface);
+            box-shadow: 0 0.3rem 1rem rgb(37 60 58 / 8%);
+            scroll-margin-top: 1rem;
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: var(--green);
+            font-size: clamp(1.5rem, 4vw, 2rem);
+        }
+
+        figure {
+            max-width: 38rem;
+            margin: 1.5rem auto;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 0.25rem solid var(--gold);
+            border-radius: 0.5rem;
+        }
+
+        figcaption {
+            margin-top: 0.5rem;
+            color: var(--muted);
+            font-weight: 700;
+        }
+
+        figure p {
+            margin-top: 0.4rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .callout {
+            padding: 1rem;
+            border-left: 0.3rem solid var(--gold);
+            background: #f7edda;
+        }
+
+        table {
+            width: 100%;
+            margin: 1rem 0;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 0.5rem;
+            color: var(--green);
+            font-weight: 700;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 0.7rem;
+            border: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #e8ddc8;
+        }
+
+        footer {
+            padding: 2rem 1rem;
+            background: var(--ink);
+            color: var(--surface);
+            text-align: center;
+        }
+
+        footer a {
+            color: #f2c873;
+        }
+
+        .validation-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .validation-links a {
+            display: inline-block;
+            padding: 0.5rem 0.8rem;
+            border: 2px solid var(--gold);
+            border-radius: 0.35rem;
+            color: var(--surface);
+            text-decoration: none;
+        }
+
+        .validation-links a:hover {
+            background: var(--green);
+        }
+
+        @media (max-width: 35rem) {
+            th,
+            td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <h1>Marching Bass Drum</h1>
+        <p>A beginner-friendly introduction to the sound, practice, and community of marching bass drum.</p>
+    </header>
+
+    <nav aria-label="Hobby sections">
+        <ul>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#when">When</a></li>
+            <li><a href="#where">Where</a></li>
+            <li><a href="#how">How</a></li>
+            <li><a href="#why">Why</a></li>
+            <li><a href="#ai-prompts">AI Prompts</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section id="what">
+            <h2>What: Marching Bass Drum</h2>
+            <p>Marching bass drum combines rhythm, movement, listening, and teamwork with others. Usually having 5 people playing their individual parts in a coordinated manner to sound like a full musical phrase.</p>
+            <ul>
+                <li>It provides a rhythmic foundation for an ensemble.</li>
+                <li>Players learn to listen and stay in time together.</li>
+                <li>It combines musical practice with marching and performance.</li>
+            </ul>
+            <figure>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8ddc8'/%3E%3Ccircle cx='320' cy='180' r='112' fill='%23245b50' stroke='%23b94f3c' stroke-width='18'/%3E%3Ccircle cx='320' cy='180' r='82' fill='%23f3eadb' stroke='%23e3ad57' stroke-width='10'/%3E%3Ccircle cx='320' cy='180' r='13' fill='%23b94f3c'/%3E%3C/svg%3E" alt="Illustration of a marching bass drum">
+                <figcaption>A simple illustration of a bass drum.</figcaption>
+                <p><em>____</em></p>
+            </figure>
+        </section>
+
+        <section id="who">
+            <h2>Who: Me as the player </h2>
+            <p>I am Haylee Gibson, and I became interested in marching bass drum around my junior year of high school.</p>
+            <p>My experience level has become more advanced over the years. Currently, I am auditoning for a world class WGI group called Atlanta Quest.</p>
+            <p class="callout">Recently, I marched over the summer as the bass 2 for a world class DCI group.</p>
+            <figure>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8ddc8'/%3E%3Ccircle cx='320' cy='180' r='112' fill='%23245b50' stroke='%23b94f3c' stroke-width='18'/%3E%3Ccircle cx='320' cy='180' r='82' fill='%23f3eadb' stroke='%23e3ad57' stroke-width='10'/%3E%3Ccircle cx='320' cy='180' r='13' fill='%23b94f3c'/%3E%3C/svg%3E" alt="Illustration of a marching bass drum">
+                <figcaption>Placeholder for a photo or illustration connected to your story.</figcaption>
+                <p><em>____</em></p>
+            </figure>
+        </section>
+
+        <section id="when">
+            <h2>When: Practice schedule</h2>
+            <p>Since it's currently audition season, I am drumming almost everyday in preperation.</p>
+            <table>
+                <caption>Example weekly practice plan and checklist</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>[Memorization]</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>[Focus on technique]</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>[Exercises in warm-up packet, emphasis on preformance]</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>[Clean up on memorization and chop out session]</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>[Exercises in warm-up packet, emphasis on preformance]</td>
+                    </tr>
+                     <tr>
+                        <td>Saturday</td>
+                        <td>[Rest or review]</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>[Rest or Audition Day]</td>
+                    </tr>
+                </tbody>
+            </table>
+            <figure>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8ddc8'/%3E%3Ccircle cx='320' cy='180' r='112' fill='%23245b50' stroke='%23b94f3c' stroke-width='18'/%3E%3Ccircle cx='320' cy='180' r='82' fill='%23f3eadb' stroke='%23e3ad57' stroke-width='10'/%3E%3Ccircle cx='320' cy='180' r='13' fill='%23b94f3c'/%3E%3C/svg%3E" alt="Illustration of a marching bass drum">
+                <figcaption>A drum ready for a practice session.</figcaption>
+                <p><em>____</em></p>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Where: Places to Play</h2>
+            <p>Practicing in variopus places allow for a change in mindset so I try to change it up when I get bored.</p>
+            <ul>
+                <li>Inside the JBC</li>
+                <li>Top of a parking deck</li>
+                <li>On the pnnmb practice field</li>
+            </ul>
+            <figure>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8ddc8'/%3E%3Ccircle cx='320' cy='180' r='112' fill='%23245b50' stroke='%23b94f3c' stroke-width='18'/%3E%3Ccircle cx='320' cy='180' r='82' fill='%23f3eadb' stroke='%23e3ad57' stroke-width='10'/%3E%3Ccircle cx='320' cy='180' r='13' fill='%23b94f3c'/%3E%3C/svg%3E" alt="Illustration of a marching bass drum">
+                <figcaption>A drum that can be played in many kinds of spaces.</figcaption>
+                <p><em>____</em></p>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How: Getting Started</h2>
+            <p>Everyones journery varies from person to person. I could name the things I would personally emphaises as a beginner.</p>
+            <ol>
+                <li>Learn the marching fundamentals and make sure you confortable enough with it to focus more of youre energy on the music and not the feet.</li>
+                <li>Dont play something hard too fast. Also start slow and build up to make sure you dont develop bad habits.</li>
+                <li>Spend a good chunck of your time practicing rhythyms as bass drums split them. Having a strong understanding of where each notes fits in the tempo helps all bass drummers agree on the split.</li>
+            </ol>
+            <figure>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8ddc8'/%3E%3Ccircle cx='320' cy='180' r='112' fill='%23245b50' stroke='%23b94f3c' stroke-width='18'/%3E%3Ccircle cx='320' cy='180' r='82' fill='%23f3eadb' stroke='%23e3ad57' stroke-width='10'/%3E%3Ccircle cx='320' cy='180' r='13' fill='%23b94f3c'/%3E%3C/svg%3E" alt="Illustration of a marching bass drum">
+                <figcaption>Placeholder for a technique or practice photo.</figcaption>
+                <p><em>_____</em></p>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why: Reasons to Play</h2>
+            <p>For me, marching bass drum is rewarding because of the poeple that gravitate towards drums, and specifically the connections you make with the other bass drummers on the line.</p>
+            <p> new to explore. I personally didnt know anything about music until I started playing bass drums. I can now call myself musciacan.</p>
+            <p class="callout">Ive made life long friends and memoeries outside of rehearsals. Thats something that will stay with me beyond just drumming.</p>
+            <figure>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8ddc8'/%3E%3Ccircle cx='320' cy='180' r='112' fill='%23245b50' stroke='%23b94f3c' stroke-width='18'/%3E%3Ccircle cx='320' cy='180' r='82' fill='%23f3eadb' stroke='%23e3ad57' stroke-width='10'/%3E%3Ccircle cx='320' cy='180' r='13' fill='%23b94f3c'/%3E%3C/svg%3E" alt="Illustration of a marching bass drum">
+                <figcaption>The shared beat is one reason players enjoy the activity.</figcaption>
+                <p><em>_____</em></p>
+            </figure>
+        </section>
+
+        <section id="ai-prompts">
+            <h2>AI Prompts</h2>
+            <p>AI assistance was used to draft this page and create the inline drum illustration. Update this disclosure if your process changes.</p>
+            <ul>
+                <li>“Create a beginner-friendly hobby website about marching bass drum with placeholder details to personalize.”</li>
+                <li>“Create a simple flat vector illustration of a marching bass drum using warm green, coral, and gold.”</li>
+            </ul>
+            <p>Review and replace all bracketed placeholders before submitting.</p>
+            <figure>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8ddc8'/%3E%3Ccircle cx='320' cy='180' r='112' fill='%23245b50' stroke='%23b94f3c' stroke-width='18'/%3E%3Ccircle cx='320' cy='180' r='82' fill='%23f3eadb' stroke='%23e3ad57' stroke-width='10'/%3E%3Ccircle cx='320' cy='180' r='13' fill='%23b94f3c'/%3E%3C/svg%3E" alt="Illustration of a marching bass drum">
+                <figcaption>Inline drum illustration used on this page.</figcaption>
+                <p><em>AI image prompt: “Create a simple flat vector illustration of a marching bass drum using warm green, coral, and gold.”</em></p>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Page by Haylee Gibson | [Course and section]</p>
+        <p><a href="../design-firm/index.html">Visit my design firm</a> (update this link if needed).</p>
+        <nav class="validation-links" aria-label="Validation links">
+            <a href="https://validator.w3.org/nu/">Validate HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
+            <a href="https://wave.webaim.org/">Check accessibility</a>
+        </nav>
+    </footer>
+</body>
+</html>
